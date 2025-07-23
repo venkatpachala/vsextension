@@ -1,20 +1,16 @@
-# project-whisperer-ai README
+# Project Whisperer AI
 
-This is the README for your extension "project-whisperer-ai". After writing up a brief description, we recommend including the following sections.
+Project Whisperer AI helps you quickly understand the contents of a workspace. It scans a limited number of source files and shows the result in a Webview panel.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Analyze Project** – run the `Project Whisperer AI: Analyze Project` command to inspect files in the current workspace. The extension collects a short snapshot of each file and displays it in a Webview panel.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+This is an early prototype. Future versions will send the snapshot to an LLM to generate a concise project summary.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The extension uses Node.js APIs available in VS Code. If you want to integrate with an LLM, set an `OPENAI_API_KEY` environment variable before running VS Code.
 
 ## Extension Settings
 
